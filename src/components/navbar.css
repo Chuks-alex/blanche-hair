@@ -1,0 +1,82 @@
+nav{
+    background: var(--blue-background);
+    transition: var(--transition);
+
+}
+
+.py-3{
+    padding: 2rem 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.brand{
+    display: flex;
+    gap: 0.3rem;
+
+}
+
+span{
+    color: var(--dark-blue);
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.toggle{
+    display: flex;
+    color: var(--svg-color);
+    gap: 1rem;
+    flex-direction: row-reverse;
+    position: relative;
+    z-index: 1;
+    font-family: 2rem;
+}
+
+.links{
+    width: 0vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background: var(--background);
+    visibility: hidden;
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.brand img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
+
+.responsive-toggle{
+    width:  60vw;
+    visibility: visible;
+    opacity: 1;
+    background-color: var(--ocean-blue);
+   
+}
+ul{
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 4rem;
+ flex-direction: column;
+ text-transform: uppercase;
+ text-align: start
+
+}
+li a{
+  
+    text-decoration: none;
+    text-align: start;
+    color: var(--light-blue);
+}

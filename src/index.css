@@ -1,13 +1,75 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+ --blue-background: #caf0f8;
+ --ocean-blue: #48cae4;
+ --dark-blue: #03045e;
+ --light-blue:#304a58;
+ --red:#f94144;
+ --blue:#0466c8;
+ --transition: 0.5s ease-in-out;
+ --fixed-shadow: rgba(0,0,0,0.16) 0px 1px;
+ --elevate-shadow: rgba(0,0,0,0.25) 0px 2;
+ --background: white;
+ --card-color: rgb(241,240,240);
+ --card-color2: white;
+ --svg-color: black;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+[data-theme= "dark"] {
+    --blue-background: #12131d;
+ --ocean-blue: #12131d;
+ --dark-blue: #03045e;
+ --light-blue:#4895ef;
+ --red:#12131d;
+ --background: black;
+ --card-color: #12131d;
+ --card-color2: #12131d;
+ --svg-color: #8eecf5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+.app{
+    overflow: visible;
+}
+
+ul{
+    list-style: none;
+}
+.mx-3{
+    margin: 0 1.5rem;
+}
+
+.py-3{
+    padding: 3rem 0;
+}
+
+@media only screen and (min-divice-width:280px){
+    html,
+    body,
+    .app{
+        max-width: 100vh;
+        overflow-x: hidden;
+    }
+
+    .app::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media only screen and (min-divice-width:1200px){
+    .mx-3{
+        margin: 0 5rem;
+    }
 }
