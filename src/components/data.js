@@ -72,3 +72,5 @@ let categories = [
     },
 
 ]
+
+export default categories
